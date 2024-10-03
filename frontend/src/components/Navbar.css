@@ -1,0 +1,71 @@
+/* Style for the overall navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  /* Left section: Logo */
+  .logo {
+    flex: 1; /* Take up minimal space */
+  }
+  
+  .logo-image {
+    max-width: 150px; /* Adjust to your logo's size */
+  }
+  
+  /* Center section: Navigation links */
+  .nav-center {
+    flex: 2; /* Center aligns the links */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between the navigation links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-links li a:hover {
+    color: #000; /* Color change on hover */
+  }
+  
+  /* Right section: Wishlist and Cart icons */
+  .icons {
+    display: flex;
+    gap: 20px; /* Space between the icons */
+    align-items: center;
+    flex: 1; /* Aligns the right section items */
+    justify-content: flex-end;
+  }
+  
+  .icon {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    background-color: #f5f5f5; /* Light background on hover */
+  }
+  

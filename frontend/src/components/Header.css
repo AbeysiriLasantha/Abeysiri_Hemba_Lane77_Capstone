@@ -1,0 +1,14 @@
+.logoDiv {
+    position: absolute; /* Ensures the logo stays in the top-left */
+    top: 0;
+    left: 0;
+    background-color: white; /* Matches your design */
+    padding: 10px 20px; /* Adjust padding as needed */
+    display: flex;
+    align-items: center;
+    z-index: 2; /* Keeps the logo above other content */
+}
+
+.logoDiv img {
+    max-width: 100px; /* Adjust the logo size as needed */
+}
