@@ -2,7 +2,9 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const connectToDb = require("./config/connectToDb"); // Database connection function
-const itemController = require("./controllers/testController"); // Import controllers
+const itemControllerTest = require("./controllers/testController"); // Import controllers
+const itemController = require("./controllers/itemController.js"); // Import controllers
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -11,17 +13,32 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors());
 
-const setupRoutes = () => {
+const setupRoutesTest = () => {
   app.get("/", (req, res) => {
     res.json({ hello: "Wellcome Lane77" });
   });
 
-  app.get("/items", itemController.fetchItems);
-  app.get("/item/:id", itemController.fetchItem);
-  app.post("/createItems", itemController.createItem);
-  app.put("/updateItems/:id", itemController.updateItemt);
-  app.delete("/deleteItems/:id", itemController.deleteItem);
+  app.get("/items", itemControllerTest.fetchItems);
+  app.get("/item/:id", itemControllerTest.fetchItem);
+  app.post("/createItems", itemControllerTest.createItem);
+  app.put("/updateItems/:id", itemControllerTest.updateItemt);
+  app.delete("/deleteItems/:id", itemControllerTest.deleteItem);
 };
+//Settup router for items
+const setupRoutesItems = () => {
+  app.get("/", (req, res) => {
+    res.json({ hello: "Welcome Lane77" });
+  });
+  
+  // Use app instead of router
+  app.post('/createItem', itemController.createItem);
+  app.get('/items', itemController.getAllItems);
+  app.get('/items/find', itemController.findItems); // Use query parameters for filtering
+  app.get('/items/:id', itemController.getItemById);
+  app.put('/updateItem/:id', itemController.updateItem);
+  app.delete('/items/:id', itemController.deleteItem);
+};
+
 
 // Async function to handle database connection and server setup
 const startServer = async () => {
@@ -32,7 +49,8 @@ const startServer = async () => {
     console.log("Database connected successfully.");
 
     // Separate block: API routes setup
-    setupRoutes();
+    //setupRoutesTest();
+    setupRoutesItems();
     
     // Starting the server
     app.listen(PORT, () => {

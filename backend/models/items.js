@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require("mongoose");
 
 // Define the schema for an item
 const itemSchema = new mongoose.Schema({
@@ -7,7 +7,7 @@ const itemSchema = new mongoose.Schema({
   categoryGender: { type: String, enum: ['WOMEN', 'MEN'], required: true, index: true },  // Index for categoryGender
   categoryStyle: { type: String, enum: ['DRESS', 'TOPS', 'SKIRTS', 'PANTS', 'JUMPSUITS', 'T-SHIRTS', 'BODYSUITS', 'JACKET'], required: true, index: true },  // Index for categoryStyle
   subCategoryStyle: { type: String, enum: ['Dresses', 'Tops', 'Jeans', 'Trousers', 'Skirts', 'Shorts', 'Jumpsuits & Playsuits', 'Dungaree', 'Blazers', 'Cardigans'], required: true },
-  collection: { type: [String], enum: ['WORKWEAR', 'LINEN', 'NATURAL', 'BLENDS', 'DENIM', 'OCCASION', 'ACTIVE WEAR'], required: true, index: true },  // Index for collection
+  collectionCat: { type: [String], enum: ['WORKWEAR', 'LINEN', 'NATURAL', 'BLENDS', 'DENIM', 'OCCASION', 'ACTIVE WEAR'], required: true, index: true },  // Index for collection
   colorCategory: { type: String, required: true },
   availableSizes: [{
     size: { type: String, enum: ['XS', 'S', 'M', 'L', 'XL', 'XXL'], required: true },
@@ -24,4 +24,7 @@ const itemSchema = new mongoose.Schema({
 
 // Export the model
 const Item = mongoose.model('Item', itemSchema);
-export default Item;
+module.exports = Item;
+
+
+
