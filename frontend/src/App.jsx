@@ -2,21 +2,23 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react'
 import './App.css'
+import './pages/Home.css'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Header from './components/Header'
 import CartWishList from './components/CartWishList';
+import Test from './pages/Test';
 
 
 function App() {
   return (
     <Router>
     <div className="nav-container" >
+       
         <Header /> 
         <Navbar /> 
         <CartWishList/>
-    
-
+             
         <Routes>
         <Route path="/" element={<Home/>} />
           {/* <Route path="/women" element={<DropdownMenuWomen/>} /> */}
@@ -30,7 +32,8 @@ function App() {
           <Route path="/activeWear" element={<Home/>} /> 
 
         </Routes>
-        </div>
+    </div>
+
     </Router>
   );
 }
