@@ -7,8 +7,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Header from './components/Header'
 import CartWishList from './components/CartWishList';
-import Test from './pages/Test';
-
+import Footer from './pages/Footer';
 
 function App() {
   return (
@@ -32,6 +31,7 @@ function App() {
           <Route path="/activeWear" element={<Home/>} /> 
 
         </Routes>
+        <Footer />
     </div>
 
     </Router>

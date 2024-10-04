@@ -1,0 +1,61 @@
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: left;
+    border-top: 1px solid #ccc;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-section {
+    flex: 1; /* This allows the sections to grow equally */
+    margin: 0 20px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #333; /* You can change this to your desired color */
+  }
+  
+  .footer-section input.email-input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 70%; /* Adjust width as necessary */
+  }
+  
+  .footer-section button.subscribe-button {
+    padding: 10px;
+    background-color: #333; /* Button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .footer-section .social-media-links img {
+    width: 30px; /* Adjust icon size */
+    margin-right: 10px;
+  }
+  
+  .footer-feedback {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
