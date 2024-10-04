@@ -1,29 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css'; // Ensure you have this CSS file
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
+import DropdownMenuWomen from './DropdownMenuWomen'; 
+import DropdownMenuMen from './DropdownMenuMen'; 
 
 const Navbar = () => {
+  // Separate states for each dropdown
+  const [womenDropdownVisible, setWomenDropdownVisible] = useState(false);
+  const [menDropdownVisible, setMenDropdownVisible] = useState(false);
+
+  // Show/hide dropdown for "WOMEN"
+  const showWomenDropdown = () => setWomenDropdownVisible(true);
+  const hideWomenDropdown = () => setWomenDropdownVisible(false);
+
+  // Show/hide dropdown for "MEN"
+  const showMenDropdown = () => setMenDropdownVisible(true);
+  const hideMenDropdown = () => setMenDropdownVisible(false);
+
   return (
     <nav className="navbar">
-     <div>
-      <ul className="nav-links">
-        <li><Link to="/women">WOMEN</Link></li>
-        <li><Link to="/men">MEN</Link></li> 
-        <li><Link to="/workwear">WORKWEAR</Link></li>
-        <li><Link to="/linen">LINEN</Link></li>
-        <li><Link to="/natural">NATURAL</Link></li>
-        <li><Link to="/denim">DENIM</Link></li>
-        <li><Link to="/occasion">OCCASION</Link></li>
-        <li><Link to="/activeWear">ACTIVE WEAR</Link></li>  
-      </ul>
-      {/* <div className="search-container">
-        <input type="text" placeholder="Search..." className="search-input" />
-      </div> */}
+      <div>
+        <ul className="nav-links">
+          <li
+            onMouseEnter={showWomenDropdown}  // Show "WOMEN" dropdown on hover
+            // onMouseLeave={hideWomenDropdown}  // Hide "WOMEN" dropdown when mouse leaves
+            className="dropdown"
+          >
+            <span className="dropdown-toggle">WOMEN</span>
+            {/* Show the dropdown if womenDropdownVisible is true */}
+            {womenDropdownVisible && <DropdownMenuWomen />}
+          </li>
+
+          <li
+            onMouseEnter={showMenDropdown}  // Show "MEN" dropdown on hover
+            // onMouseLeave={hideMenDropdown}  // Hide "MEN" dropdown when mouse leaves
+            className="dropdown"
+          >
+            <span className="dropdown-toggle">MEN</span>
+            {/* Show the dropdown if menDropdownVisible is true */}
+            {menDropdownVisible && <DropdownMenuMen />}
+          </li>
+
+          <li><Link to="/workwear">WORKWEAR</Link></li>
+          <li><Link to="/linen">LINEN</Link></li>
+          <li><Link to="/natural">NATURAL</Link></li>
+          <li><Link to="/denim">DENIM</Link></li>
+          <li><Link to="/occasion">OCCASION</Link></li>
+          <li><Link to="/activeWear">ACTIVE WEAR</Link></li>
+        </ul>
       </div>
-      <div className="icons">
-        <a href="/wishlist" className="icon">❤️ WISHLIST (0)</a>
-        <a href="/cart" className="icon">🛒 CART (1)</a>
-      </div>
+      
     </nav>
   );
 };

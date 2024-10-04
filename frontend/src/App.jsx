@@ -5,30 +5,32 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Header from './components/Header'
+import CartWishList from './components/CartWishList';
+
 
 function App() {
   return (
     <Router>
-    <div className="nav-container">
-        <Header /> {/* The logo should stay at the top left */}
-        <Navbar /> {/* Navbar placed right under the logo */}
-     </div>
+    <div className="nav-container" >
+        <Header /> 
+        <Navbar /> 
+        <CartWishList/>
     
-    <br/>
-      <div className="app">
+
         <Routes>
-          <Route path="/women" element={<Home/>} />
-          {/* <Route path="/men" element={<MEN/>} />
-          <Route path="/workwear" element={<WORKWEAR/>} />
-          <Route path="/linen" element={<LINEN/>} />
-          <Route path="/natural" element={<NATURAL/>} />
-          <Route path="/blends" element={<BLENDS/>} />
-          <Route path="/denim" element={<DENIM/>} />
-          <Route path="/occasion" element={<OCCASION/>} />
-          <Route path="/activeWear" element={<ACTIVE WEAR/>} /> */}
+        <Route path="/" element={<Home/>} />
+          {/* <Route path="/women" element={<DropdownMenuWomen/>} /> */}
+          <Route path="/men" element={<Home/>} />
+          <Route path="/workwear" element={<Home/>} />
+          <Route path="/linen" element={<Home/>} />
+          <Route path="/natural" element={<Home/>} />
+          <Route path="/blends" element={<Home/>} />
+          <Route path="/denim" element={<Home/>} />
+          <Route path="/occasion" element={<Home/>} />
+          <Route path="/activeWear" element={<Home/>} /> 
 
         </Routes>
-      </div>
+        </div>
     </Router>
   );
 }

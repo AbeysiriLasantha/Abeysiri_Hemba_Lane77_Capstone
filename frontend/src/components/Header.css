@@ -1,5 +1,7 @@
 .logoDiv {
-    position: absolute; /* Ensures the logo stays in the top-left */
+    position: absolute; 
+    display: flex;
+    position: fixed; /* Ensure the navbar stays fixed on scroll */
     top: 0;
     left: 0;
     background-color: white; /* Matches your design */
