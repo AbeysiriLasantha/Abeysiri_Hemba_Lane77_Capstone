@@ -1,62 +1,1658 @@
 {
     "products": [
-      {
-        "id": 1,
-        "title": "iPhone 9",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 549,
-        "thumbnail": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
-        "quantity" : 1
-      },
-      {
-        "id": 2,
-        "title": "iPhone X",
-        "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-        "price": 899,
-        "thumbnail": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
-        "quantity" : 1
-      },
-      {
-        "id": 3,
-        "title": "Samsung Universe 9",
-        "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
-        "price": 1249,
-        "category": "smartphones",
-        "thumbnail": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
-        "quantity" : 1
-      },
-      {
-        "id": 4,
-        "title": "OPPOF19",
-        "description": "OPPO F19 is officially announced on April 2021.",
-        "price": 280,
-        "thumbnail": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
-        "quantity" : 1
-      },
-      {
-        "id": 5,
-        "title": "Huawei P30",
-        "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
-        "price": 499,
-        "thumbnail": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
-        "quantity" : 1
-      },
-      {
-        "id": 6,
-        "title": "MacBook Pro",
-        "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
-        "price": 1749,
-        "thumbnail": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
-        "quantity" : 1
-      },
-      {
-        "id": 7,
-        "title": "Samsung Galaxy Book",
-        "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
-        "price": 1499,
-        "thumbnail": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
-        "quantity" : 1
-      }
-    ]
-  }
-  
+
+        
+            {
+                "itemCode": "ITEM001",
+                "itemName": "Product 1",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "BODYSUITS",
+                "subCategoryStyle": "Dungaree",
+                "collectionCat": [
+                    "DENIM"
+                ],
+                "colorCategory": "Red",
+                "availableSizes": [
+                    {
+                        "size": "L",
+                        "qty": 10
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 3
+                    },
+                    {
+                        "size": "S",
+                        "qty": 5
+                    }
+                ],
+                "itemPrice": 76.99,
+                "newArrival": "Yes",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM002",
+                "itemName": "Product 2",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "SKIRTS",
+                "subCategoryStyle": "Dresses",
+                "collectionCat": [
+                    "ACTIVE WEAR"
+                ],
+                "colorCategory": "Green",
+                "availableSizes": [
+                    {
+                        "size": "L",
+                        "qty": 5
+                    },
+                    {
+                        "size": "L",
+                        "qty": 1
+                    },
+                    {
+                        "size": "M",
+                        "qty": 5
+                    }
+                ],
+                "itemPrice": 89.39,
+                "newArrival": "Yes",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM003",
+                "itemName": "Product 3",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "DRESS",
+                "subCategoryStyle": "Skirts",
+                "collectionCat": [
+                    "BLENDS"
+                ],
+                "colorCategory": "Yellow",
+                "availableSizes": [
+                    {
+                        "size": "XL",
+                        "qty": 9
+                    },
+                    {
+                        "size": "XXL",
+                        "qty": 10
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 10
+                    }
+                ],
+                "itemPrice": 66.34,
+                "newArrival": "Yes",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM004",
+                "itemName": "Product 4",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "SKIRTS",
+                "subCategoryStyle": "Jumpsuits & Playsuits",
+                "collectionCat": [
+                    "WORKWEAR"
+                ],
+                "colorCategory": "Red",
+                "availableSizes": [
+                    {
+                        "size": "XL",
+                        "qty": 3
+                    },
+                    {
+                        "size": "M",
+                        "qty": 7
+                    },
+                    {
+                        "size": "XXL",
+                        "qty": 8
+                    }
+                ],
+                "itemPrice": 59.17,
+                "newArrival": "Yes",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM005",
+                "itemName": "Product 5",
+                "categoryGender": "MEN",
+                "categoryStyle": "DRESS",
+                "subCategoryStyle": "Skirts",
+                "collectionCat": [
+                    "ACTIVE WEAR"
+                ],
+                "colorCategory": "Black",
+                "availableSizes": [
+                    {
+                        "size": "XXL",
+                        "qty": 10
+                    },
+                    {
+                        "size": "L",
+                        "qty": 10
+                    },
+                    {
+                        "size": "S",
+                        "qty": 4
+                    }
+                ],
+                "itemPrice": 83.85,
+                "newArrival": "No",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM006",
+                "itemName": "Product 6",
+                "categoryGender": "MEN",
+                "categoryStyle": "DRESS",
+                "subCategoryStyle": "Jumpsuits & Playsuits",
+                "collectionCat": [
+                    "OCCASION"
+                ],
+                "colorCategory": "Yellow",
+                "availableSizes": [
+                    {
+                        "size": "XS",
+                        "qty": 2
+                    },
+                    {
+                        "size": "M",
+                        "qty": 1
+                    },
+                    {
+                        "size": "S",
+                        "qty": 7
+                    }
+                ],
+                "itemPrice": 27.37,
+                "newArrival": "No",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM007",
+                "itemName": "Product 7",
+                "categoryGender": "MEN",
+                "categoryStyle": "TOPS",
+                "subCategoryStyle": "Skirts",
+                "collectionCat": [
+                    "OCCASION"
+                ],
+                "colorCategory": "Blue",
+                "availableSizes": [
+                    {
+                        "size": "M",
+                        "qty": 3
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 7
+                    },
+                    {
+                        "size": "M",
+                        "qty": 9
+                    }
+                ],
+                "itemPrice": 76.74,
+                "newArrival": "Yes",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM008",
+                "itemName": "Product 8",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "BODYSUITS",
+                "subCategoryStyle": "Cardigans",
+                "collectionCat": [
+                    "LINEN"
+                ],
+                "colorCategory": "Black",
+                "availableSizes": [
+                    {
+                        "size": "XS",
+                        "qty": 7
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 3
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 1
+                    }
+                ],
+                "itemPrice": 67.13,
+                "newArrival": "No",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM009",
+                "itemName": "Product 9",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "PANTS",
+                "subCategoryStyle": "Shorts",
+                "collectionCat": [
+                    "ACTIVE WEAR"
+                ],
+                "colorCategory": "Blue",
+                "availableSizes": [
+                    {
+                        "size": "XXL",
+                        "qty": 4
+                    },
+                    {
+                        "size": "S",
+                        "qty": 1
+                    },
+                    {
+                        "size": "L",
+                        "qty": 6
+                    }
+                ],
+                "itemPrice": 90.33,
+                "newArrival": "No",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM010",
+                "itemName": "Product 10",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "JUMPSUITS",
+                "subCategoryStyle": "Jumpsuits & Playsuits",
+                "collectionCat": [
+                    "DENIM"
+                ],
+                "colorCategory": "Red",
+                "availableSizes": [
+                    {
+                        "size": "S",
+                        "qty": 7
+                    },
+                    {
+                        "size": "L",
+                        "qty": 6
+                    },
+                    {
+                        "size": "M",
+                        "qty": 4
+                    }
+                ],
+                "itemPrice": 86.33,
+                "newArrival": "No",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM011",
+                "itemName": "Product 11",
+                "categoryGender": "MEN",
+                "categoryStyle": "T-SHIRTS",
+                "subCategoryStyle": "Tops",
+                "collectionCat": [
+                    "LINEN"
+                ],
+                "colorCategory": "Yellow",
+                "availableSizes": [
+                    {
+                        "size": "XS",
+                        "qty": 9
+                    },
+                    {
+                        "size": "S",
+                        "qty": 2
+                    },
+                    {
+                        "size": "S",
+                        "qty": 5
+                    }
+                ],
+                "itemPrice": 14.65,
+                "newArrival": "No",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM012",
+                "itemName": "Product 12",
+                "categoryGender": "MEN",
+                "categoryStyle": "BODYSUITS",
+                "subCategoryStyle": "Dungaree",
+                "collectionCat": [
+                    "NATURAL"
+                ],
+                "colorCategory": "Black",
+                "availableSizes": [
+                    {
+                        "size": "S",
+                        "qty": 6
+                    },
+                    {
+                        "size": "M",
+                        "qty": 6
+                    },
+                    {
+                        "size": "L",
+                        "qty": 4
+                    }
+                ],
+                "itemPrice": 74.64,
+                "newArrival": "No",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM013",
+                "itemName": "Product 13",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "SKIRTS",
+                "subCategoryStyle": "Jumpsuits & Playsuits",
+                "collectionCat": [
+                    "ACTIVE WEAR"
+                ],
+                "colorCategory": "White",
+                "availableSizes": [
+                    {
+                        "size": "XL",
+                        "qty": 1
+                    },
+                    {
+                        "size": "M",
+                        "qty": 3
+                    },
+                    {
+                        "size": "M",
+                        "qty": 2
+                    }
+                ],
+                "itemPrice": 36.67,
+                "newArrival": "No",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM014",
+                "itemName": "Product 14",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "T-SHIRTS",
+                "subCategoryStyle": "Dungaree",
+                "collectionCat": [
+                    "BLENDS"
+                ],
+                "colorCategory": "Blue",
+                "availableSizes": [
+                    {
+                        "size": "L",
+                        "qty": 3
+                    },
+                    {
+                        "size": "S",
+                        "qty": 1
+                    },
+                    {
+                        "size": "L",
+                        "qty": 4
+                    }
+                ],
+                "itemPrice": 20.09,
+                "newArrival": "No",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM015",
+                "itemName": "Product 15",
+                "categoryGender": "MEN",
+                "categoryStyle": "DRESS",
+                "subCategoryStyle": "Dungaree",
+                "collectionCat": [
+                    "LINEN"
+                ],
+                "colorCategory": "Red",
+                "availableSizes": [
+                    {
+                        "size": "XL",
+                        "qty": 4
+                    },
+                    {
+                        "size": "S",
+                        "qty": 3
+                    },
+                    {
+                        "size": "M",
+                        "qty": 2
+                    }
+                ],
+                "itemPrice": 39.07,
+                "newArrival": "Yes",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM016",
+                "itemName": "Product 16",
+                "categoryGender": "MEN",
+                "categoryStyle": "SKIRTS",
+                "subCategoryStyle": "Dresses",
+                "collectionCat": [
+                    "BLENDS"
+                ],
+                "colorCategory": "Blue",
+                "availableSizes": [
+                    {
+                        "size": "XXL",
+                        "qty": 5
+                    },
+                    {
+                        "size": "S",
+                        "qty": 9
+                    },
+                    {
+                        "size": "S",
+                        "qty": 2
+                    }
+                ],
+                "itemPrice": 53.54,
+                "newArrival": "Yes",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM017",
+                "itemName": "Product 17",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "DRESS",
+                "subCategoryStyle": "Blazers",
+                "collectionCat": [
+                    "NATURAL"
+                ],
+                "colorCategory": "Yellow",
+                "availableSizes": [
+                    {
+                        "size": "M",
+                        "qty": 4
+                    },
+                    {
+                        "size": "XXL",
+                        "qty": 6
+                    },
+                    {
+                        "size": "M",
+                        "qty": 4
+                    }
+                ],
+                "itemPrice": 81.18,
+                "newArrival": "No",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM018",
+                "itemName": "Product 18",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "JACKET",
+                "subCategoryStyle": "Tops",
+                "collectionCat": [
+                    "ACTIVE WEAR"
+                ],
+                "colorCategory": "White",
+                "availableSizes": [
+                    {
+                        "size": "M",
+                        "qty": 6
+                    },
+                    {
+                        "size": "L",
+                        "qty": 1
+                    },
+                    {
+                        "size": "XXL",
+                        "qty": 5
+                    }
+                ],
+                "itemPrice": 96.37,
+                "newArrival": "No",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM019",
+                "itemName": "Product 19",
+                "categoryGender": "MEN",
+                "categoryStyle": "JUMPSUITS",
+                "subCategoryStyle": "Skirts",
+                "collectionCat": [
+                    "BLENDS"
+                ],
+                "colorCategory": "Green",
+                "availableSizes": [
+                    {
+                        "size": "XS",
+                        "qty": 10
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 7
+                    },
+                    {
+                        "size": "S",
+                        "qty": 1
+                    }
+                ],
+                "itemPrice": 39.58,
+                "newArrival": "Yes",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM020",
+                "itemName": "Product 20",
+                "categoryGender": "MEN",
+                "categoryStyle": "JUMPSUITS",
+                "subCategoryStyle": "Blazers",
+                "collectionCat": [
+                    "OCCASION"
+                ],
+                "colorCategory": "White",
+                "availableSizes": [
+                    {
+                        "size": "XS",
+                        "qty": 10
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 10
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 6
+                    }
+                ],
+                "itemPrice": 97.1,
+                "newArrival": "No",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM021",
+                "itemName": "Product 21",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "JACKET",
+                "subCategoryStyle": "Blazers",
+                "collectionCat": [
+                    "OCCASION"
+                ],
+                "colorCategory": "Blue",
+                "availableSizes": [
+                    {
+                        "size": "L",
+                        "qty": 8
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 4
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 7
+                    }
+                ],
+                "itemPrice": 99.35,
+                "newArrival": "No",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM022",
+                "itemName": "Product 22",
+                "categoryGender": "MEN",
+                "categoryStyle": "SKIRTS",
+                "subCategoryStyle": "Shorts",
+                "collectionCat": [
+                    "OCCASION"
+                ],
+                "colorCategory": "Black",
+                "availableSizes": [
+                    {
+                        "size": "S",
+                        "qty": 8
+                    },
+                    {
+                        "size": "XXL",
+                        "qty": 5
+                    },
+                    {
+                        "size": "M",
+                        "qty": 10
+                    }
+                ],
+                "itemPrice": 74.36,
+                "newArrival": "No",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM023",
+                "itemName": "Product 23",
+                "categoryGender": "MEN",
+                "categoryStyle": "T-SHIRTS",
+                "subCategoryStyle": "Blazers",
+                "collectionCat": [
+                    "OCCASION"
+                ],
+                "colorCategory": "Blue",
+                "availableSizes": [
+                    {
+                        "size": "M",
+                        "qty": 4
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 7
+                    },
+                    {
+                        "size": "S",
+                        "qty": 3
+                    }
+                ],
+                "itemPrice": 16.59,
+                "newArrival": "Yes",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM024",
+                "itemName": "Product 24",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "T-SHIRTS",
+                "subCategoryStyle": "Trousers",
+                "collectionCat": [
+                    "LINEN"
+                ],
+                "colorCategory": "Red",
+                "availableSizes": [
+                    {
+                        "size": "L",
+                        "qty": 4
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 8
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 8
+                    }
+                ],
+                "itemPrice": 48.85,
+                "newArrival": "No",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM025",
+                "itemName": "Product 25",
+                "categoryGender": "MEN",
+                "categoryStyle": "SKIRTS",
+                "subCategoryStyle": "Tops",
+                "collectionCat": [
+                    "ACTIVE WEAR"
+                ],
+                "colorCategory": "Red",
+                "availableSizes": [
+                    {
+                        "size": "S",
+                        "qty": 7
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 7
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 10
+                    }
+                ],
+                "itemPrice": 66.22,
+                "newArrival": "Yes",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM026",
+                "itemName": "Product 26",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "JUMPSUITS",
+                "subCategoryStyle": "Skirts",
+                "collectionCat": [
+                    "NATURAL"
+                ],
+                "colorCategory": "Red",
+                "availableSizes": [
+                    {
+                        "size": "XXL",
+                        "qty": 6
+                    },
+                    {
+                        "size": "XXL",
+                        "qty": 9
+                    },
+                    {
+                        "size": "M",
+                        "qty": 9
+                    }
+                ],
+                "itemPrice": 27.63,
+                "newArrival": "No",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM027",
+                "itemName": "Product 27",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "TOPS",
+                "subCategoryStyle": "Jumpsuits & Playsuits",
+                "collectionCat": [
+                    "NATURAL"
+                ],
+                "colorCategory": "Black",
+                "availableSizes": [
+                    {
+                        "size": "XXL",
+                        "qty": 7
+                    },
+                    {
+                        "size": "XXL",
+                        "qty": 9
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 5
+                    }
+                ],
+                "itemPrice": 31.79,
+                "newArrival": "Yes",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM028",
+                "itemName": "Product 28",
+                "categoryGender": "MEN",
+                "categoryStyle": "BODYSUITS",
+                "subCategoryStyle": "Blazers",
+                "collectionCat": [
+                    "NATURAL"
+                ],
+                "colorCategory": "Black",
+                "availableSizes": [
+                    {
+                        "size": "S",
+                        "qty": 6
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 3
+                    },
+                    {
+                        "size": "M",
+                        "qty": 8
+                    }
+                ],
+                "itemPrice": 71.87,
+                "newArrival": "No",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM029",
+                "itemName": "Product 29",
+                "categoryGender": "MEN",
+                "categoryStyle": "JACKET",
+                "subCategoryStyle": "Tops",
+                "collectionCat": [
+                    "BLENDS"
+                ],
+                "colorCategory": "Yellow",
+                "availableSizes": [
+                    {
+                        "size": "XS",
+                        "qty": 5
+                    },
+                    {
+                        "size": "S",
+                        "qty": 5
+                    },
+                    {
+                        "size": "M",
+                        "qty": 9
+                    }
+                ],
+                "itemPrice": 83.57,
+                "newArrival": "Yes",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM030",
+                "itemName": "Product 30",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "SKIRTS",
+                "subCategoryStyle": "Blazers",
+                "collectionCat": [
+                    "LINEN"
+                ],
+                "colorCategory": "Yellow",
+                "availableSizes": [
+                    {
+                        "size": "XXL",
+                        "qty": 5
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 3
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 6
+                    }
+                ],
+                "itemPrice": 49.93,
+                "newArrival": "Yes",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM031",
+                "itemName": "Product 31",
+                "categoryGender": "MEN",
+                "categoryStyle": "PANTS",
+                "subCategoryStyle": "Blazers",
+                "collectionCat": [
+                    "BLENDS"
+                ],
+                "colorCategory": "Black",
+                "availableSizes": [
+                    {
+                        "size": "L",
+                        "qty": 8
+                    },
+                    {
+                        "size": "M",
+                        "qty": 5
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 1
+                    }
+                ],
+                "itemPrice": 21.21,
+                "newArrival": "Yes",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM032",
+                "itemName": "Product 32",
+                "categoryGender": "MEN",
+                "categoryStyle": "BODYSUITS",
+                "subCategoryStyle": "Dresses",
+                "collectionCat": [
+                    "ACTIVE WEAR"
+                ],
+                "colorCategory": "Green",
+                "availableSizes": [
+                    {
+                        "size": "S",
+                        "qty": 8
+                    },
+                    {
+                        "size": "S",
+                        "qty": 8
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 9
+                    }
+                ],
+                "itemPrice": 70.36,
+                "newArrival": "Yes",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM033",
+                "itemName": "Product 33",
+                "categoryGender": "MEN",
+                "categoryStyle": "PANTS",
+                "subCategoryStyle": "Jumpsuits & Playsuits",
+                "collectionCat": [
+                    "BLENDS"
+                ],
+                "colorCategory": "Black",
+                "availableSizes": [
+                    {
+                        "size": "S",
+                        "qty": 3
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 8
+                    },
+                    {
+                        "size": "S",
+                        "qty": 6
+                    }
+                ],
+                "itemPrice": 66.96,
+                "newArrival": "No",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM034",
+                "itemName": "Product 34",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "BODYSUITS",
+                "subCategoryStyle": "Skirts",
+                "collectionCat": [
+                    "BLENDS"
+                ],
+                "colorCategory": "Red",
+                "availableSizes": [
+                    {
+                        "size": "M",
+                        "qty": 4
+                    },
+                    {
+                        "size": "XXL",
+                        "qty": 3
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 8
+                    }
+                ],
+                "itemPrice": 82.72,
+                "newArrival": "No",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM035",
+                "itemName": "Product 35",
+                "categoryGender": "MEN",
+                "categoryStyle": "T-SHIRTS",
+                "subCategoryStyle": "Skirts",
+                "collectionCat": [
+                    "LINEN"
+                ],
+                "colorCategory": "Black",
+                "availableSizes": [
+                    {
+                        "size": "S",
+                        "qty": 7
+                    },
+                    {
+                        "size": "S",
+                        "qty": 10
+                    },
+                    {
+                        "size": "XXL",
+                        "qty": 10
+                    }
+                ],
+                "itemPrice": 37.76,
+                "newArrival": "Yes",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM036",
+                "itemName": "Product 36",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "JACKET",
+                "subCategoryStyle": "Jumpsuits & Playsuits",
+                "collectionCat": [
+                    "ACTIVE WEAR"
+                ],
+                "colorCategory": "Red",
+                "availableSizes": [
+                    {
+                        "size": "M",
+                        "qty": 4
+                    },
+                    {
+                        "size": "XXL",
+                        "qty": 2
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 8
+                    }
+                ],
+                "itemPrice": 59.96,
+                "newArrival": "No",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM037",
+                "itemName": "Product 37",
+                "categoryGender": "MEN",
+                "categoryStyle": "SKIRTS",
+                "subCategoryStyle": "Shorts",
+                "collectionCat": [
+                    "BLENDS"
+                ],
+                "colorCategory": "Green",
+                "availableSizes": [
+                    {
+                        "size": "S",
+                        "qty": 9
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 3
+                    },
+                    {
+                        "size": "XXL",
+                        "qty": 3
+                    }
+                ],
+                "itemPrice": 68.1,
+                "newArrival": "Yes",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM038",
+                "itemName": "Product 38",
+                "categoryGender": "MEN",
+                "categoryStyle": "TOPS",
+                "subCategoryStyle": "Dungaree",
+                "collectionCat": [
+                    "ACTIVE WEAR"
+                ],
+                "colorCategory": "Green",
+                "availableSizes": [
+                    {
+                        "size": "S",
+                        "qty": 10
+                    },
+                    {
+                        "size": "S",
+                        "qty": 6
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 10
+                    }
+                ],
+                "itemPrice": 95.18,
+                "newArrival": "Yes",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM039",
+                "itemName": "Product 39",
+                "categoryGender": "MEN",
+                "categoryStyle": "BODYSUITS",
+                "subCategoryStyle": "Jumpsuits & Playsuits",
+                "collectionCat": [
+                    "NATURAL"
+                ],
+                "colorCategory": "White",
+                "availableSizes": [
+                    {
+                        "size": "XS",
+                        "qty": 1
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 10
+                    },
+                    {
+                        "size": "M",
+                        "qty": 3
+                    }
+                ],
+                "itemPrice": 56.01,
+                "newArrival": "Yes",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM040",
+                "itemName": "Product 40",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "PANTS",
+                "subCategoryStyle": "Dungaree",
+                "collectionCat": [
+                    "DENIM"
+                ],
+                "colorCategory": "Red",
+                "availableSizes": [
+                    {
+                        "size": "XXL",
+                        "qty": 9
+                    },
+                    {
+                        "size": "L",
+                        "qty": 7
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 2
+                    }
+                ],
+                "itemPrice": 86.61,
+                "newArrival": "Yes",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM041",
+                "itemName": "Product 41",
+                "categoryGender": "MEN",
+                "categoryStyle": "BODYSUITS",
+                "subCategoryStyle": "Jumpsuits & Playsuits",
+                "collectionCat": [
+                    "NATURAL"
+                ],
+                "colorCategory": "Black",
+                "availableSizes": [
+                    {
+                        "size": "XS",
+                        "qty": 4
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 3
+                    },
+                    {
+                        "size": "L",
+                        "qty": 8
+                    }
+                ],
+                "itemPrice": 71.87,
+                "newArrival": "No",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM042",
+                "itemName": "Product 42",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "SKIRTS",
+                "subCategoryStyle": "Tops",
+                "collectionCat": [
+                    "OCCASION"
+                ],
+                "colorCategory": "Black",
+                "availableSizes": [
+                    {
+                        "size": "L",
+                        "qty": 5
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 6
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 7
+                    }
+                ],
+                "itemPrice": 28.91,
+                "newArrival": "Yes",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM043",
+                "itemName": "Product 43",
+                "categoryGender": "MEN",
+                "categoryStyle": "BODYSUITS",
+                "subCategoryStyle": "Skirts",
+                "collectionCat": [
+                    "ACTIVE WEAR"
+                ],
+                "colorCategory": "Blue",
+                "availableSizes": [
+                    {
+                        "size": "S",
+                        "qty": 4
+                    },
+                    {
+                        "size": "S",
+                        "qty": 5
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 9
+                    }
+                ],
+                "itemPrice": 93.86,
+                "newArrival": "Yes",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM044",
+                "itemName": "Product 44",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "SKIRTS",
+                "subCategoryStyle": "Shorts",
+                "collectionCat": [
+                    "NATURAL"
+                ],
+                "colorCategory": "Black",
+                "availableSizes": [
+                    {
+                        "size": "L",
+                        "qty": 8
+                    },
+                    {
+                        "size": "S",
+                        "qty": 4
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 6
+                    }
+                ],
+                "itemPrice": 67.34,
+                "newArrival": "Yes",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM045",
+                "itemName": "Product 45",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "DRESS",
+                "subCategoryStyle": "Cardigans",
+                "collectionCat": [
+                    "LINEN"
+                ],
+                "colorCategory": "Blue",
+                "availableSizes": [
+                    {
+                        "size": "M",
+                        "qty": 6
+                    },
+                    {
+                        "size": "XL",
+                        "qty": 2
+                    },
+                    {
+                        "size": "M",
+                        "qty": 7
+                    }
+                ],
+                "itemPrice": 13.48,
+                "newArrival": "No",
+                "onSale": true,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM046",
+                "itemName": "Product 46",
+                "categoryGender": "MEN",
+                "categoryStyle": "BODYSUITS",
+                "subCategoryStyle": "Jeans",
+                "collectionCat": [
+                    "OCCASION"
+                ],
+                "colorCategory": "Green",
+                "availableSizes": [
+                    {
+                        "size": "M",
+                        "qty": 7
+                    },
+                    {
+                        "size": "M",
+                        "qty": 2
+                    },
+                    {
+                        "size": "XXL",
+                        "qty": 6
+                    }
+                ],
+                "itemPrice": 61.42,
+                "newArrival": "No",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM047",
+                "itemName": "Product 47",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "TOPS",
+                "subCategoryStyle": "Shorts",
+                "collectionCat": [
+                    "ACTIVE WEAR"
+                ],
+                "colorCategory": "Red",
+                "availableSizes": [
+                    {
+                        "size": "XXL",
+                        "qty": 5
+                    },
+                    {
+                        "size": "L",
+                        "qty": 8
+                    },
+                    {
+                        "size": "L",
+                        "qty": 4
+                    }
+                ],
+                "itemPrice": 62.96,
+                "newArrival": "Yes",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM048",
+                "itemName": "Product 48",
+                "categoryGender": "MEN",
+                "categoryStyle": "TOPS",
+                "subCategoryStyle": "Cardigans",
+                "collectionCat": [
+                    "ACTIVE WEAR"
+                ],
+                "colorCategory": "Blue",
+                "availableSizes": [
+                    {
+                        "size": "L",
+                        "qty": 5
+                    },
+                    {
+                        "size": "S",
+                        "qty": 7
+                    },
+                    {
+                        "size": "S",
+                        "qty": 10
+                    }
+                ],
+                "itemPrice": 38.89,
+                "newArrival": "No",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM049",
+                "itemName": "Product 49",
+                "categoryGender": "WOMEN",
+                "categoryStyle": "JACKET",
+                "subCategoryStyle": "Trousers",
+                "collectionCat": [
+                    "NATURAL"
+                ],
+                "colorCategory": "Black",
+                "availableSizes": [
+                    {
+                        "size": "M",
+                        "qty": 1
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 9
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 1
+                    }
+                ],
+                "itemPrice": 48.61,
+                "newArrival": "Yes",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            },
+            {
+                "itemCode": "ITEM050",
+                "itemName": "Product 50",
+                "categoryGender": "MEN",
+                "categoryStyle": "JACKET",
+                "subCategoryStyle": "Dungaree",
+                "collectionCat": [
+                    "DENIM"
+                ],
+                "colorCategory": "Red",
+                "availableSizes": [
+                    {
+                        "size": "L",
+                        "qty": 7
+                    },
+                    {
+                        "size": "XS",
+                        "qty": 1
+                    },
+                    {
+                        "size": "XXL",
+                        "qty": 10
+                    }
+                ],
+                "itemPrice": 64.93,
+                "newArrival": "Yes",
+                "onSale": false,
+                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "quantity": 1
+            }
+        ]
+
+    
+}

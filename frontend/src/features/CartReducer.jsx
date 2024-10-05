@@ -3,7 +3,7 @@ export const totalItem = (cart) => {
 }
 
 export const totalPrice = (cart) => {
-    return cart.reduce((total, product) => total + product.quantity * product.price , 0)
+    return cart.reduce((total, product) => total + product.quantity * product.itemPrice , 0)
 }
 
 
@@ -13,15 +13,15 @@ const CartReducer = (state, action) => {
             return [...state, action.product]
 
         case "Remove":
-            return state.filter( p => p.id !== action.id)
+            return state.filter( p => p.itemCode !== action.itemCode)
 
         case "Increase":
-            const IndexI = state.findIndex( p => p.id === action.id)
+            const IndexI = state.findIndex( p => p.itemCode === action.itemCode)
             state[IndexI].quantity += 1 
             return [...state]
 
         case "Decrease":
-            const IndexD = state.findIndex( p => p.id === action.id)
+            const IndexD = state.findIndex( p => p.itemCode === action.itemCode)
             state[IndexD].quantity -= 1 
             return [...state]
 

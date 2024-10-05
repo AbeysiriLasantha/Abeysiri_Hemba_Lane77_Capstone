@@ -1,0 +1,90 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "itemCode":"0001",
+        "title": "iPhone 9",
+        "itemName":"Crew Neck T-Shirt",
+        "description": "An apple mobile which is nothing like apple",
+        "price": 549,
+        "ItemPrice": 22.99,
+        "thumbnail": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+        "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+        "quantity" : 1
+      },
+      {
+        "id": 2,
+        "itemCode":"0002",
+        "title": "iPhone X",
+        "itemName":"Crew Neck T-Shirt",
+        "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+         "price": 899,
+        "ItemPrice": 20.99,
+        "thumbnail": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+        "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+        "quantity" : 1
+      },
+      {
+        "id": 3,
+        "itemCode":"0003",
+        "title": "Samsung Universe 9",
+        "itemName":"Crew Neck T-Shirt",
+        "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+        "price": 1249,
+        "ItemPrice": 15.99,
+        "category": "smartphones",
+        "thumbnail": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+        "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+        "quantity" : 1
+      },
+      {
+        "id": 4,
+        "itemCode":"0004",
+        "title": "OPPOF19",
+        "itemName":"Crew Neck T-Shirt",
+        "description": "OPPO F19 is officially announced on April 2021.",
+        "price": 280,
+        "ItemPrice": 24.99,
+        "thumbnail": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+        "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+        "quantity" : 1
+      },
+      {
+        "id": 5,
+        "itemCode":"0005",
+        "title": "Huawei P30",
+        "itemName":"Crew Neck T-Shirt",
+        "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+        "price": 499,
+        "ItemPrice": 28.99,
+        "thumbnail": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+        "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+        "quantity" : 1
+      },
+      {
+        "id": 6,
+        "itemCode":"0006",
+        "title": "MacBook Pro",
+        "itemName":"Crew Neck T-Shirt",
+        "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+        "price": 1749,
+        "ItemPrice": 30.99,
+        "thumbnail": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+        "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+        "quantity" : 1
+      },
+      {
+        "id": 7,
+        "itemCode":"0007",
+        "title": "Samsung Galaxy Book",
+        "itemName":"Crew Neck T-Shirt",
+        "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+        "price": 1499,
+        "ItemPrice": 17.99,
+        "thumbnail": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+        "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+        "quantity" : 1
+      }
+    ]
+  }
+  
