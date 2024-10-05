@@ -1,15 +1,20 @@
-import React from 'react';
-import './CartWishList.css'; // Ensure you have this CSS file
-import { Link } from 'react-router-dom';
+import React, { useContext } from "react";
+import { BsCart } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import { CartContext } from "../features/ContextProvider";
 
 const CartWishList = () => {
+  const {cart} = useContext(CartContext)
   return (
-    <nav className="navbaricons">
-      <div className="icons">
-        <Link to="/wishlist" className="icon">❤️ WISHLIST (0)</Link>
-        <Link to="/cart" className="icon">🛒 CART (1)</Link>
-      </div>
-    </nav>
+    <div className="d-flex justify-content-between py-3 px-5 bg-secondary text-white">
+      
+      <Link
+        to="/cart"
+        className="navbar-link fs-5 text-white text-decoration-none"
+      >
+        <BsCart />{cart.length}
+      </Link>
+    </div>
   );
 };
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { useState } from 'react'
 import './App.css'
 import './pages/Home.css'
 import Navbar from './components/Navbar'
@@ -11,6 +10,7 @@ import CartWishList from './components/CartWishList';
 import Footer from './pages/Footer';
 import Products from './pages/Products';
 import Cart from './pages/Cart'
+import NavbarNew from './components/NavbarNew';
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
        
         <Header /> 
         <Navbar /> 
+        {/* <NavbarNew/> */}
         <CartWishList/>
              
         <Routes>
@@ -32,6 +33,7 @@ function App() {
           <Route path="/denim" element={<Home/>} />
           <Route path="/occasion" element={<Home/>} />
           <Route path="/activeWear" element={<Home/>} /> 
+          <Route path="/cart" element={<Cart></Cart>}></Route>
 
         </Routes>
         <Footer />

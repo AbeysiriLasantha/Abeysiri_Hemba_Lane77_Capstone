@@ -3,8 +3,12 @@ import { CartContext } from '../features/ContextProvider'
 import CartProduct from '../Components/CartProduct'
 import { totalItem, totalPrice } from '../features/CartReducer'
 
+
+
+
 const Cart = () => {
     const {cart} = useContext(CartContext)
+    
   return (
     <div className='container mt-3'>
         <div className="row">
