@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react'
 import './App.css'
@@ -8,6 +9,8 @@ import Home from './pages/Home'
 import Header from './components/Header'
 import CartWishList from './components/CartWishList';
 import Footer from './pages/Footer';
+import Products from './pages/Products';
+import Cart from './pages/Cart'
 
 function App() {
   return (
@@ -23,7 +26,7 @@ function App() {
           {/* <Route path="/women" element={<DropdownMenuWomen/>} /> */}
           <Route path="/men" element={<Home/>} />
           <Route path="/workwear" element={<Home/>} />
-          <Route path="/linen" element={<Home/>} />
+          <Route path="/linen" element={<Products/>} />
           <Route path="/natural" element={<Home/>} />
           <Route path="/blends" element={<Home/>} />
           <Route path="/denim" element={<Home/>} />
