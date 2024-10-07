@@ -7,8 +7,7 @@ function Header() {
   return (
     <div className='logoDiv'>
         <Link to="/">
-          <div className="innerLogo"> <strong> LANE <sup>77 </sup> </strong> </div>
-          {/* <img src={logo} alt="Logo" style={{ width: '100px', height: '80px' }} /> */}
+          <div className="innerLogo">   LANE77   </div>
         </Link>
     </div>
   )

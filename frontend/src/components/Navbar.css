@@ -2,7 +2,7 @@
 .navbar {
   display: flex;
   position: fixed; /* Ensure the navbar stays fixed on scroll */
-  top: 0;
+  top: 1;
   left: 50%; /* Move to the middle of the screen */
   transform: translateX(-50%); /* Adjust the position to truly center */
   justify-content: center; /* Center the content horizontally */
@@ -12,7 +12,7 @@
   border-bottom: 1px solid #e0e0e0;
   z-index: 1000; /* Ensure the navbar stays on top of other content */
   width: auto; /* Allow the navbar to adjust based on the content */
-
+  /* margin-bottom: 20px; */
 
 }
 
@@ -28,6 +28,7 @@
 .nav-links li {
   font-weight: bold;
   cursor: pointer;
+  font-size: 17px;
 }
 
 .nav-links li a {

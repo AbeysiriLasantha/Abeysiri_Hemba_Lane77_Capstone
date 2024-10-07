@@ -1,13 +1,15 @@
 import React, { useContext } from "react";
 import { CartContext } from "../features/ContextProvider";
+import { DataContext } from "../features/DataProvider"; // Import your DataContext
 import { useParams } from "react-router-dom";
 
-const ProductDetails = ({ products }) => {
+const ProductDetails = () => {
   const { itemCode } = useParams();
   const { dispatch } = useContext(CartContext);
+  const { productsData } = useContext(DataContext); // Get products data from context
 
   // Find the product by itemCode
-  const product = products?.find((p) => p.itemCode === itemCode);
+  const product = productsData?.find((p) => p.itemCode === itemCode);
 
   if (!product) {
     return <div>Product not found</div>;

@@ -16,15 +16,23 @@
 }
 
 .innerLogo {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:24px;
-    background-color: black;
-    color:gold;
-    border-radius: 26px;
-    padding:8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px; /* Increase font size slightly for prominence */
+    background: linear-gradient(135deg, #333, #111); /* Adds a gradient to the background */
+    color: beige; 
+    border-radius: 5px; /* Softer border with more radius */
+    padding: 6px 16px; /* Increased padding for better spacing */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adds subtle shadow for depth */
+    letter-spacing: 1.5px; /* Slight spacing between letters for modern feel */
+    text-transform: uppercase; /* Uppercase to give a bold, clean look */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    text-align: center; /* Center the text within the logo */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Adds a subtle border */
 }
 
 .innerLogo:hover {
-    background-color: rgb(77, 183, 77);
-    color:black;
+    transform: scale(1.05); /* Slightly enlarge the logo on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5); /* Adds a stronger shadow on hover */
+    background: linear-gradient(135deg, #444, #222); /* Darken the gradient on hover */
 }

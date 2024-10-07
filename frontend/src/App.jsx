@@ -11,7 +11,8 @@ import Footer from './pages/Footer';
 import Products from './pages/Products';
 import Cart from './pages/Cart'
 import ProductDetails from './components/ProductDetails';
-import Data from '../Data.json'
+//import Data from '../Data.json'
+import DataProvider from './features/DataProvider'; 
 import BuyNow from './components/BuyNow';
 // Import footer section components
 import ContactUs from './pages/ContactUs';
@@ -22,8 +23,9 @@ import SizeGuide from './pages/SizeGuide';
 
 
 function App() {
-  const [products, setProducts] = useState(Data.products)
+ 
   return (
+    <DataProvider>
     <Router>
       <div className="nav-container" >
 
@@ -69,7 +71,7 @@ function App() {
           {/* Routings for cat and checkout */}
 
           <Route path="/cart" element={<Cart></Cart>}></Route>
-          <Route path="/product/:itemCode" element={<ProductDetails products={products} />} />
+          <Route path="/product/:itemCode" element={<ProductDetails />} />
           <Route path="/buy-now/:totalPrice" element={<BuyNow />} />
 
           {/* Routings for footer pages */}
@@ -84,6 +86,7 @@ function App() {
       </div>
 
     </Router>
+    </DataProvider>
   );
 }
 

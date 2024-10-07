@@ -19,7 +19,8 @@ const itemSchema = new mongoose.Schema({
   imageURL1: { type: String, required: true },
   imageHoverURL: { type: String, required: true },
   imageURL2: { type: String },
-  imageURL3: { type: String }
+  imageURL3: { type: String },
+  quantity: {type: Number,default: 1}
 });
 
 // Export the model
