@@ -1,6 +1,5 @@
 {
     "products": [
-
         
             {
                 "itemCode": "ITEM001",
@@ -204,7 +203,7 @@
                 "itemCode": "ITEM007",
                 "itemName": "Product 7",
                 "categoryGender": "MEN",
-                "categoryStyle": "TOPS",
+                "categoryStyle": "SHIRTS",
                 "subCategoryStyle": "Skirts",
                 "collectionCat": [
                     "OCCASION"
@@ -359,8 +358,8 @@
                 "itemPrice": 14.65,
                 "newArrival": "No",
                 "onSale": false,
-                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
-                "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL1": "https://res.cloudinary.com/dyznxx4hm/image/upload/v1728148698/linen_3_yzb4m0.webp",
+                "imageHoverURL": "https://res.cloudinary.com/dyznxx4hm/image/upload/v1728148698/linen_3_yzb4m0.webp",
                 "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
                 "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
                 "quantity": 1
@@ -369,7 +368,7 @@
                 "itemCode": "ITEM012",
                 "itemName": "Product 12",
                 "categoryGender": "MEN",
-                "categoryStyle": "BODYSUITS",
+                "categoryStyle": "SHORTS",
                 "subCategoryStyle": "Dungaree",
                 "collectionCat": [
                     "NATURAL"
@@ -986,7 +985,7 @@
                 "itemPrice": 49.93,
                 "newArrival": "Yes",
                 "onSale": true,
-                "imageURL1": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
+                "imageURL1": "https://res.cloudinary.com/dyznxx4hm/image/upload/v1728148698/linen_2_ou31hd.webp",
                 "imageHoverURL": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
                 "imageURL2": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",
                 "imageURL3": "https://res.cloudinary.com/dbxeomato/image/upload/v1727847044/medium_p8ej6d.webp",

@@ -1,0 +1,18 @@
+/* In your CSS file */
+.color-box {
+    cursor: pointer;
+  }
+  
+  .sidebar {
+    position: fixed; /* Keeps sidebar in a fixed position */
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Scrollable */
+    background-color: #f8f9fa; /* Light background color */
+    padding: 15px;
+  }
+  
+  .card {
+    margin-left: 20px; /* Adds some space between sidebar and card */
+  }
+  
+

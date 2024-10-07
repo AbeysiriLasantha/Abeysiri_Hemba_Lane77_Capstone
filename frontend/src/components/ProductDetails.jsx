@@ -56,6 +56,7 @@ const ProductDetails = ({ products }) => {
 
           {/* Action Buttons */}
           <button className="btn btn-primary btn-lg w-100 mb-2">Buy Now</button>
+          
           <button
             className="btn btn-dark btn-lg w-100"
             onClick={() => dispatch({ type: "Add", product })}

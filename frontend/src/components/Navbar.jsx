@@ -3,6 +3,7 @@ import './Navbar.css'; // Ensure you have this CSS file
 import { Link } from 'react-router-dom';
 import DropdownMenuWomen from './DropdownMenuWomen'; 
 import DropdownMenuMen from './DropdownMenuMen'; 
+import Sidebar from './SideBar';
 
 const Navbar = () => {
   // Separate states for each dropdown
@@ -23,20 +24,20 @@ const Navbar = () => {
         <ul className="nav-links">
           <li
             onMouseEnter={showWomenDropdown}  // Show "WOMEN" dropdown on hover
-            // onMouseLeave={hideWomenDropdown}  // Hide "WOMEN" dropdown when mouse leaves
+            //onMouseLeave={hideWomenDropdown}  // Hide "WOMEN" dropdown when mouse leaves
             className="dropdown"
           >
-            <span className="dropdown-toggle">WOMEN</span>
+            <Link to="/women" className="dropdown-toggle">WOMEN</Link>
             {/* Show the dropdown if womenDropdownVisible is true */}
             {womenDropdownVisible && <DropdownMenuWomen />}
           </li>
 
           <li
             onMouseEnter={showMenDropdown}  // Show "MEN" dropdown on hover
-            // onMouseLeave={hideMenDropdown}  // Hide "MEN" dropdown when mouse leaves
+            //onMouseLeave={hideMenDropdown}  // Hide "MEN" dropdown when mouse leaves
             className="dropdown"
           >
-            <span className="dropdown-toggle">MEN</span>
+            <Link to="/men" className="dropdown-toggle">MEN</Link>
             {/* Show the dropdown if menDropdownVisible is true */}
             {menDropdownVisible && <DropdownMenuMen />}
           </li>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const BuyNow = () => {
     const { totalPrice } = useParams();
@@ -13,7 +14,10 @@ const BuyNow = () => {
     const [zipCode, setZipCode] = useState('');
     const [phone, setPhone] = useState('');
     const [paymentMethod, setPaymentMethod] = useState('debit');
-
+    const [discount, setDiscount] = useState(0);
+    const [subtotal, setSubtotal] = useState(Number(totalPrice)); 
+    const [total, setTotal] = useState(Number(totalPrice)); 
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         // Handle form submission logic here
@@ -31,9 +35,19 @@ const BuyNow = () => {
         });
     };
 
+    const applyDiscount = () => {
+        const discountValue = parseFloat(discount) || 0; // Get the discount value
+        const calculatedSubtotal = totalPrice - discountValue; // Calculate subtotal
+        const tax = calculatedSubtotal * 0.01; // Calculate tax
+        const calculatedTotal = calculatedSubtotal + tax; // Calculate total
+        setSubtotal(calculatedSubtotal.toFixed(2)); // Update subtotal
+        setTotal(calculatedTotal.toFixed(2)); // Update total
+    };
+
     return (
+        
         <div className="container mt-5">
-            <h4>Total Price: Rs {totalPrice}</h4> {/* Display total price */}
+            
             <div className="row">
                 <div className="col-md-6">
                     <h4>Contact</h4>
@@ -189,20 +203,25 @@ const BuyNow = () => {
                 <div className="col-md-6">
                     <div className="card">
                         <div className="card-body">
-                            <h4>Bodysuit - 300924</h4>
-                            <p>UK 14 / Black</p>
-                            <h5>Rs 3,980.00</h5>
+                            <h5>Total Price: $ {totalPrice}</h5>
+
                             <input
                                 type="text"
                                 className="form-control mb-3"
                                 placeholder="Discount code or gift card"
+                                value={discount}
+                                onChange={(e) => setDiscount(e.target.value)}
                             />
-                            <button className="btn btn-secondary">Apply</button>
+                            <button className="btn btn-secondary" onClick={applyDiscount}>
+                                Apply
+                            </button>
                             <hr />
                             <h5>Subtotal</h5>
-                            <p>Rs 3,980.00</p>
+                            <p>$ {subtotal}</p>
+                            <h5>Tax</h5>
+                            <p>$ {(subtotal * 0.01).toFixed(2)}</p>
                             <h5>Total</h5>
-                            <p>LKR Rs 3,980.00</p>
+                            <p>$ {total}</p>
                         </div>
                     </div>
                 </div>
