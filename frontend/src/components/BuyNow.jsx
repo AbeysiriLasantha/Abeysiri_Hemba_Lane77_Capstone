@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import visaIcon from '../assets/images/Visa.png'
+import mastercardIcon from '../assets/images/Master.png'
+import amexIcon from '../assets/images/Amex.png';
+import paypalIcon from '../assets/images/PayPal.png';
+
 const BuyNow = () => {
     const { totalPrice } = useParams();
     const [email, setEmail] = useState('');
@@ -151,52 +156,43 @@ const BuyNow = () => {
                                 checked={paymentMethod === 'debit'}
                                 onChange={(e) => setPaymentMethod(e.target.value)}
                             />
-                            <label className="form-check-label">Pay with Debit or Credit Card</label>
+                            <label className="form-check-label">
+                                Pay with Visa or MasterCard
+                                <img src={visaIcon} alt="Visa" style={{ width: '40px', marginLeft: '10px' }} />
+                                <img src={mastercardIcon} alt="MasterCard" style={{ width: '40px', marginLeft: '10px' }} />
+                            </label>
                         </div>
+
                         <div className="form-check">
                             <input
                                 type="radio"
                                 className="form-check-input"
                                 name="paymentMethod"
-                                value="mintpay"
-                                checked={paymentMethod === 'mintpay'}
+                                value="amex"
+                                checked={paymentMethod === 'amex'}
                                 onChange={(e) => setPaymentMethod(e.target.value)}
                             />
-                            <label className="form-check-label">Mintpay | Shop now. Pay later.</label>
+                            <label className="form-check-label">
+                                Pay with Amex Card
+                                <img src={amexIcon} alt="Amex" style={{ width: '40px', marginLeft: '10px' }} />
+                            </label>
                         </div>
+
                         <div className="form-check">
                             <input
                                 type="radio"
                                 className="form-check-input"
                                 name="paymentMethod"
-                                value="bank"
-                                checked={paymentMethod === 'bank'}
+                                value="paypal"
+                                checked={paymentMethod === 'paypal'}
                                 onChange={(e) => setPaymentMethod(e.target.value)}
                             />
-                            <label className="form-check-label">Bank Card / Bank Account - PayHere</label>
+                            <label className="form-check-label">
+                                Pay with PayPal
+                                <img src={paypalIcon} alt="PayPal" style={{ width: '40px', marginLeft: '10px' }} />
+                            </label>
                         </div>
-                        <div className="form-check">
-                            <input
-                                type="radio"
-                                className="form-check-input"
-                                name="paymentMethod"
-                                value="koko"
-                                checked={paymentMethod === 'koko'}
-                                onChange={(e) => setPaymentMethod(e.target.value)}
-                            />
-                            <label className="form-check-label">Koko: Buy Now Pay Later</label>
-                        </div>
-                        <div className="form-check">
-                            <input
-                                type="radio"
-                                className="form-check-input"
-                                name="paymentMethod"
-                                value="cash"
-                                checked={paymentMethod === 'cash'}
-                                onChange={(e) => setPaymentMethod(e.target.value)}
-                            />
-                            <label className="form-check-label">Cash on Delivery (COD)</label>
-                        </div>
+                                               
                         <button type="submit" className="btn btn-primary mt-3">Pay now</button>
                     </form>
                 </div>

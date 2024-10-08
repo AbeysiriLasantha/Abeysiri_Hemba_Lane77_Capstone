@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <div className='logoDiv'>
-        <Link to="/">
-          <div className="innerLogo">   LANE77   </div>
-        </Link>
+    <div className='logoDiv' >
+       <Link to="/">
+        <div className="innerLogo"> Lane<sup>77</sup></div>        
+        </Link> 
     </div>
   )
 }

@@ -5,8 +5,8 @@ const itemSchema = new mongoose.Schema({
   itemCode: { type: String, required: true },
   itemName: { type: String, required: true },
   categoryGender: { type: String, enum: ['WOMEN', 'MEN'], required: true, index: true },  // Index for categoryGender
-  categoryStyle: { type: String, enum: ['DRESS', 'TOPS', 'SKIRTS', 'PANTS', 'JUMPSUITS', 'T-SHIRTS', 'BODYSUITS', 'JACKET'], required: true, index: true },  // Index for categoryStyle
-  subCategoryStyle: { type: String, enum: ['Dresses', 'Tops', 'Jeans', 'Trousers', 'Skirts', 'Shorts', 'Jumpsuits & Playsuits', 'Dungaree', 'Blazers', 'Cardigans'], required: true },
+  categoryStyle: { type: String, enum: ['DRESS', 'TOPS','SHIRTS', 'SKIRTS', 'PANTS', 'JUMPSUITS', 'T-SHIRTS', 'BODYSUITS', 'JACKET','SHORTS','DENIM'], required: true, index: true },  // Index for categoryStyle
+  subCategoryStyle: { type: String, enum: ['Dresses', 'Tops','Shirts','T-Shirts', 'Jeans', 'Trousers', 'Skirts', 'Shorts', 'Jumpsuits & Playsuits', 'Dungaree', 'Blazers', 'Cardigans'], required: true },
   collectionCat: { type: [String], enum: ['WORKWEAR', 'LINEN', 'NATURAL', 'BLENDS', 'DENIM', 'OCCASION', 'ACTIVE WEAR'], required: true, index: true },  // Index for collection
   colorCategory: { type: String, required: true },
   availableSizes: [{

@@ -1,38 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
 .logoDiv {
-    position: absolute; 
-    display: flex;
-    position: fixed; /* Ensure the navbar stays fixed on scroll */
+    margin-top: 10px;
+    position: fixed; /* Navbar stays fixed on scroll */
     top: 0;
     left: 0;
     background-color: white; /* Matches your design */
-    padding: 10px 20px; /* Adjust padding as needed */
+    padding: 0 20px; /* Minimal padding for thinner height */
     display: flex;
     align-items: center;
     z-index: 2; /* Keeps the logo above other content */
+    height: 50px; /* Ensures both are the same height */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+    justify-content: flex-start; /* Aligns content to the left */
 }
 
 .logoDiv img {
-    max-width: 100px; /* Adjust the logo size as needed */
+    max-width: 200px; /* Adjust the logo size as needed */
 }
 
 .innerLogo {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
-                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 24px; /* Increase font size slightly for prominence */
-    background: linear-gradient(135deg, #333, #111); /* Adds a gradient to the background */
-    color: beige; 
-    border-radius: 5px; /* Softer border with more radius */
-    padding: 6px 16px; /* Increased padding for better spacing */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adds subtle shadow for depth */
-    letter-spacing: 1.5px; /* Slight spacing between letters for modern feel */
-    text-transform: uppercase; /* Uppercase to give a bold, clean look */
-    transition: transform 0.3s ease; /* Smooth hover effect */
-    text-align: center; /* Center the text within the logo */
-    border: 2px solid rgba(255, 255, 255, 0.2); /* Adds a subtle border */
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px; /* Adjusted size to fit within the logoDiv */
+    font-weight: 300; /* Thin font for simplicity */
+    color: black;
+    background-color: white; /* Solid white background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 0; /* Removed padding to keep height consistent */
+    box-shadow: none; /* Removed shadow to match simple design */
+    letter-spacing: 1.2px; /* Modern feel */
+    text-transform: none; /* Keep text natural */
+    text-align: left; /* Ensure text is left aligned */
+    border: none; /* No border to keep it clean */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.innerLogo strong {
+    font-weight: 600; /* Slightly bolder 'L' for emphasis */
+}
+
+.innerLogo sup {
+    font-size: 0.7em; /* Smaller font size for superscript */
 }
 
 .innerLogo:hover {
-    transform: scale(1.05); /* Slightly enlarge the logo on hover */
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5); /* Adds a stronger shadow on hover */
-    background: linear-gradient(135deg, #444, #222); /* Darken the gradient on hover */
+    transform: scale(1.05); /* Slight enlarge on hover */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+    background-color: #f5f5f5; /* Light grey hover background */
+}
+
+.logoDiv {
+    margin-top: 10px;
 }

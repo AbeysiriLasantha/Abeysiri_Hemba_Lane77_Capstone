@@ -1,4 +1,3 @@
-
 const Item = require('../models/items.js')
 
 // Create a new item

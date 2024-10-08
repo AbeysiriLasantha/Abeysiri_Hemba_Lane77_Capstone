@@ -5,15 +5,14 @@
   top: 1;
   left: 50%; /* Move to the middle of the screen */
   transform: translateX(-50%); /* Adjust the position to truly center */
-  justify-content: center; /* Center the content horizontally */
+  justify-content:left; /* Center the content horizontally */
   align-items: center; /* Align content vertically */  
-  padding: 10px 20px;
+  padding: 1px 20px;
   background-color: white;
   border-bottom: 1px solid #e0e0e0;
   z-index: 1000; /* Ensure the navbar stays on top of other content */
   width: auto; /* Allow the navbar to adjust based on the content */
   /* margin-bottom: 20px; */
-
 }
 
 /* Center section: Navigation links */

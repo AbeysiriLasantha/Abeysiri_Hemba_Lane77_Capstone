@@ -7,10 +7,10 @@ const Product = ({ product }) => {
   const { dispatch } = useContext(CartContext);
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" style={{ border: "10px solid orange" }}>
       <div className="row">
               {/* Product display on the right */}
-        <div className="col-md-9">
+        <div className="">
           <div className="card h-100">
             <Link to={`/product/${product.itemCode}`}>
               <img src={product.imageURL1} className="card-img-top h-75" alt="..." />

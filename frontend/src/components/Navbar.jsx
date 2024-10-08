@@ -19,8 +19,8 @@ const Navbar = () => {
   const hideMenDropdown = () => setMenDropdownVisible(false);
 
   return (
-    <nav className="navbar">
-      <div>
+    <nav className="navbar" style={{border:"5px solid green"}}>
+      <div >
         <ul className="nav-links">
           <li
             onMouseEnter={showWomenDropdown}  // Show "WOMEN" dropdown on hover
