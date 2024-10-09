@@ -1,4 +1,4 @@
-<h1 align="center">Capstone Project - MERN Application</h1> 
+<h1 align="center">MERN SE Bootcamp - Capstone Project - Clothing Store App</h1> 
 
 ### Project Overview 
 The Capstone Project aimis to develop a full-stack web application using the MERN stack (MongoDB, Express, React, and Node.js). The goal is to create a functional, interactive web application that demonstrates my skills in both frontend and backend development, focusing on user experience, creativity, and technical competence.
@@ -40,14 +40,14 @@ The objective of this capstone project is to apply the knowledge and skills acqu
 - POST /api/users/register: User registration.
 
 ## Challenges and Solutions
-1. **Challenge 1**: Handling Authentication
-- Solution: Implemented JWT-based authentication to secure routes and ensure user sessions are managed properly.
+**Challenge 1**: Handling Authentication
+**Solution** Implemented JWT-based authentication to secure routes and ensure user sessions are managed properly.
 
-2. **Challenge 2**: Error Handling
-- Solution: Used try/catch blocks and error handlers in both the frontend and backend to gracefully manage exceptions.
+**Challenge 2**: Error Handling
+**Solution** Used try/catch blocks and error handlers in both the frontend and backend to gracefully manage exceptions.
 
-3. **Challenge 3**: Asynchronous Data Fetching
-- Solution: Implemented async/await with Axios to handle API requests more efficiently. 
+**Challenge 3**: Asynchronous Data Fetching
+**Solution** Implemented async/await with Axios to handle API requests more efficiently. 
 
 
 ## Future Enhancements
@@ -57,30 +57,21 @@ The objective of this capstone project is to apply the knowledge and skills acqu
 - **Backend Menu**: Implement a menu in the backend to maintain the product items.
 
 ## External References
-1. YouTube Video Links
+**YouTube Video Links**
+
 [Build a Shopping Cart with React JS, Context API, and useReducer Hook | Ecommerce Website Tutorial](https://www.youtube.com/watch?v=uMBgUUPkgUY)
-
 [React Shopping Cart Tutorial | Context API with useReducer Hook in React JS](https://www.youtube.com/watch?v=HptuMAUaNGk)
-
 [React Context API with Project | useContext Hook | createContext | State Management Tutorial](https://www.youtube.com/watch?v=gQ_l-1zpVBo)
-
 [Learn useState In 15 Minutes - React Hooks Explained](https://www.youtube.com/watch?v=O6P86uwfdR0)
-
 [Learn React Hooks: useEffect - Simply Explained!](https://www.youtube.com/watch?v=-4XpG5_Lj_o)
-
 [Learn React Hooks: useReducer - Simply Explained!](https://www.youtube.com/watch?v=rgp_iCVS8ys)
-
 [Full React Tutorial #1 - Introduction](https://www.youtube.com/watch?v=j942wKiXFu8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d) 
 
 
-2. GitHub Repository Links 
+**GitHub Repository Links**
 
 [React-Shopping-Cart](https://github.com/YousafKhan1/React-Shopping-Cart)
-
 [React-shopping-cart-context-with-reducer](https://github.com/piyush-eon/React-shopping-cart-context-with-reducer)
-
 [youtube-context-api-tutorial](https://github.com/piyush-eon/youtube-context-api-tutorial)
-
 [learn-react-hooks-useEffect](https://github.com/cosdensolutions/code/tree/master/videos/long/learn-react-hooks-useEffect)
-
 [learn-react-hooks-useReducer](https://github.com/cosdensolutions/code/tree/master/videos/long/learn-react-hooks-useReducer)
