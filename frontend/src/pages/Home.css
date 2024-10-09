@@ -1,20 +1,14 @@
 .image-slider {
-    margin-top: 160px;
-    position: relative;
-    width: 1280px; /* Adjust to your layout */
-    height: 550px; /* Adjust height as needed */
-    overflow: hidden; /* Hide overflow to create a sliding effect */
-    display: flex;
-    justify-content: center; /* Horizontally center the image */
-    align-items: center;    /* Vertically center the image */
-    border: 1px solid #ccc; /* Optional: add a border to visualize the container */
-  }
-  
-  .image-slider img {
-    width: 100%; /* Make image responsive */
-    height: 100%; /* Fill the height of the container */
-    position: absolute;
-    transition: opacity 1s ease; /* Optional: smooth transition */
-    object-fit: cover; /* Maintain aspect ratio while covering the area */
-  }
-  
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  position: relative;
+  overflow: hidden;
+}
+
+.image-slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and fill */
+}

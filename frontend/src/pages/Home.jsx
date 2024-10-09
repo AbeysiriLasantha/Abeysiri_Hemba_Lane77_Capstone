@@ -6,6 +6,8 @@ const images = [
   '/assets/images/wall2.png',
   '/assets/images/wall3.png',
   '/assets/images/wall4.png',
+  '/assets/images/wall5.png',
+  '/assets/images/wall6.png'
 ];
 
 const Home = () => {
@@ -22,13 +24,17 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="image-slider" style={{border: "2px solid red"}}>
+    <div className="image-slider">
       {images.map((img, index) => (
         <img
           key={index}
           src={img}
           alt={`Slide ${index}`}
-          style={{ opacity: currentIndex === index ? 1 : 0 }}
+          style={{
+            opacity: currentIndex === index ? 1 : 0,
+            width: '100%', // Set image width to 100%
+            transition: 'opacity 1s ease-in-out', // Smooth transition
+          }}
         />
       ))}
     </div>
