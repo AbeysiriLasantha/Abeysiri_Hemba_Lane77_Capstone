@@ -20,7 +20,8 @@ import Delivery from './pages/Delivery';
 import ReturnsExchanges from './pages/ReturnsExchanges';
 import SizeGuide from './pages/SizeGuide';
 import User from './components/User';
-//import PrivacyPolicy from './pages/PrivacyPolicy';
+import Payment from './components/Payment';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 
 function App() {
@@ -82,7 +83,8 @@ function App() {
             <Route path="/cart" element={<Cart></Cart>}></Route>
             <Route path="/product/:itemCode" element={<ProductDetails />} />
             <Route path="/buy-now/:totalPrice" element={<BuyNow />} />
-
+            <Route path="/pay-now/:total" element={<Payment />} />
+          
             {/* Routing for user creattion */}
             <Route path="/user" element={<User />} />
 
@@ -92,7 +94,7 @@ function App() {
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/returns-exchanges" element={<ReturnsExchanges />} />
             <Route path="/size-guide" element={<SizeGuide />} />
-            {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
 
           </Routes>

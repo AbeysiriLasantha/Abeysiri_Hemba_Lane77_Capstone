@@ -1,48 +1,27 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import visaIcon from '../assets/images/Visa.png'
-import mastercardIcon from '../assets/images/Master.png'
-import amexIcon from '../assets/images/Amex.png';
-import paypalIcon from '../assets/images/PayPal.png';
-
 const BuyNow = () => {
-    const { totalPrice } = useParams();
-    const [email, setEmail] = useState('');
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [country, setCountry] = useState('United States');
-    const [address, setAddress] = useState('');
-    const [city, setCity] = useState('');
-    const [state, setState] = useState('');
-    const [zipCode, setZipCode] = useState('');
-    const [phone, setPhone] = useState('');
-    const [paymentMethod, setPaymentMethod] = useState('debit');
+    const location = useLocation();
+    const { totalPrice } = useParams(); // Retrieve totalPrice from URL parameters
+    let finalPrice;
+
+    // Check if called from ProductDetails.jsx
+    if (location.state && location.state.product) {
+        finalPrice = location.state.product.ItemPrice; // Get price from the product object
+    } else {
+        // Use totalPrice from URL parameters if called from CartProduct.jsx
+        finalPrice = totalPrice; 
+    }
+
     const [discount, setDiscount] = useState(0);
-    const [subtotal, setSubtotal] = useState(Number(totalPrice)); 
-    const [total, setTotal] = useState(Number(totalPrice)); 
-    
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission logic here
-        console.log({
-            email,
-            firstName,
-            lastName,
-            country,
-            address,
-            city,
-            state,
-            zipCode,
-            phone,
-            paymentMethod,
-        });
-    };
+    const [subtotal, setSubtotal] = useState(Number(finalPrice)); // Use finalPrice as initial subtotal
+    const [total, setTotal] = useState(Number(finalPrice)); // Use finalPrice as initial total
 
     const applyDiscount = () => {
         const discountValue = parseFloat(discount) || 0; // Get the discount value
-        const calculatedSubtotal = totalPrice - discountValue; // Calculate subtotal
+        const calculatedSubtotal = subtotal - discountValue; // Calculate subtotal
         const tax = calculatedSubtotal * 0.01; // Calculate tax
         const calculatedTotal = calculatedSubtotal + tax; // Calculate total
         setSubtotal(calculatedSubtotal.toFixed(2)); // Update subtotal
@@ -50,175 +29,47 @@ const BuyNow = () => {
     };
 
     return (
-        
         <div className="container mt-5">
-            
-            <div className="row">
-                <div className="col-md-6">
-                    <h4>Contact</h4>
-                    <form onSubmit={handleSubmit}>
-                        <div className="mb-3">
-                            <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Email or mobile phone number"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                required
-                            />
-                            <div className="form-check">
-                                <input
-                                    className="form-check-input"
-                                    type="checkbox"
-                                    checked
-                                />
-                                <label className="form-check-label">Email me with news and offers</label>
-                            </div>
-                        </div>
-                        <h4>Delivery</h4>
-                        <div className="mb-3">
-                            <select
-                                className="form-select"
-                                value={country}
-                                onChange={(e) => setCountry(e.target.value)}
-                                required
-                            >
-                                <option value="United States">United States</option>
-                                {/* Add more countries as needed */}
-                            </select>
-                            <input
-                                type="text"
-                                className="form-control"
-                                placeholder="First name"
-                                value={firstName}
-                                onChange={(e) => setFirstName(e.target.value)}
-                                required
-                            />
-                            <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Last name"
-                                value={lastName}
-                                onChange={(e) => setLastName(e.target.value)}
-                                required
-                            />
-                            <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Address"
-                                value={address}
-                                onChange={(e) => setAddress(e.target.value)}
-                                required
-                            />
-                            <input
-                                type="text"
-                                className="form-control"
-                                placeholder="City"
-                                value={city}
-                                onChange={(e) => setCity(e.target.value)}
-                                required
-                            />
-                            <input
-                                type="text"
-                                className="form-control"
-                                placeholder="State"
-                                value={state}
-                                onChange={(e) => setState(e.target.value)}
-                                required
-                            />
-                            <input
-                                type="text"
-                                className="form-control"
-                                placeholder="ZIP code"
-                                value={zipCode}
-                                onChange={(e) => setZipCode(e.target.value)}
-                                required
-                            />
-                            <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Phone"
-                                value={phone}
-                                onChange={(e) => setPhone(e.target.value)}
-                                required
-                            />
-                        </div>
-                        <h4>Shipping method</h4>
-                        <p>Enter your shipping address to view available shipping methods.</p>
-                        <h4>Payment</h4>
-                        <p>All transactions are secure and encrypted.</p>
-                        <div className="form-check">
-                            <input
-                                type="radio"
-                                className="form-check-input"
-                                name="paymentMethod"
-                                value="debit"
-                                checked={paymentMethod === 'debit'}
-                                onChange={(e) => setPaymentMethod(e.target.value)}
-                            />
-                            <label className="form-check-label">
-                                Pay with Visa or MasterCard
-                                <img src={visaIcon} alt="Visa" style={{ width: '40px', marginLeft: '10px' }} />
-                                <img src={mastercardIcon} alt="MasterCard" style={{ width: '40px', marginLeft: '10px' }} />
-                            </label>
-                        </div>
+            <div className="col-md-6">
+                <div className="card shadow-sm">
+                    <div className="card-header bg-primary text-white">
+                        <h5 className="mb-0">Order Summary</h5>
+                    </div>
+                    <div className="card-body">
+                        <h5 className="text-dark">Total Price: <span className="text-success">$ {finalPrice}</span></h5>
 
-                        <div className="form-check">
-                            <input
-                                type="radio"
-                                className="form-check-input"
-                                name="paymentMethod"
-                                value="amex"
-                                checked={paymentMethod === 'amex'}
-                                onChange={(e) => setPaymentMethod(e.target.value)}
-                            />
-                            <label className="form-check-label">
-                                Pay with Amex Card
-                                <img src={amexIcon} alt="Amex" style={{ width: '40px', marginLeft: '10px' }} />
-                            </label>
-                        </div>
+                        <input
+                            type="text"
+                            className="form-control mb-3"
+                            placeholder="Discount code or gift card"
+                            value={discount}
+                            onChange={(e) => setDiscount(e.target.value)}
+                        />
+                        <button className="btn btn-outline-secondary btn-sm mb-3" onClick={applyDiscount}>
+                            Apply Discount
+                        </button>
 
-                        <div className="form-check">
-                            <input
-                                type="radio"
-                                className="form-check-input"
-                                name="paymentMethod"
-                                value="paypal"
-                                checked={paymentMethod === 'paypal'}
-                                onChange={(e) => setPaymentMethod(e.target.value)}
-                            />
-                            <label className="form-check-label">
-                                Pay with PayPal
-                                <img src={paypalIcon} alt="PayPal" style={{ width: '40px', marginLeft: '10px' }} />
-                            </label>
-                        </div>
-                                               
-                        <button type="submit" className="btn btn-primary mt-3">Pay now</button>
-                    </form>
-                </div>
-                <div className="col-md-6">
-                    <div className="card">
-                        <div className="card-body">
-                            <h5>Total Price: $ {totalPrice}</h5>
+                        <hr />
 
-                            <input
-                                type="text"
-                                className="form-control mb-3"
-                                placeholder="Discount code or gift card"
-                                value={discount}
-                                onChange={(e) => setDiscount(e.target.value)}
-                            />
-                            <button className="btn btn-secondary" onClick={applyDiscount}>
-                                Apply
-                            </button>
-                            <hr />
-                            <h5>Subtotal</h5>
+                        <div className="d-flex justify-content-between">
+                            <h6>Subtotal</h6>
                             <p>$ {subtotal}</p>
-                            <h5>Tax</h5>
-                            <p>$ {(subtotal * 0.01).toFixed(2)}</p>
-                            <h5>Total</h5>
-                            <p>$ {total}</p>
                         </div>
+
+                        <div className="d-flex justify-content-between">
+                            <h6>Tax</h6>
+                            <p>$ {(subtotal * 0.01).toFixed(2)}</p>
+                        </div>
+
+                        <hr />
+
+                        <div className="d-flex justify-content-between">
+                            <h5>Total</h5>
+                            <p className="text-danger">$ {total}</p>
+                        </div>
+                        <Link to={`/pay-now/${total}`}>
+                            <button className="btn btn-primary w-100 mt-3">Proceed to Checkout</button>
+                        </Link>
                     </div>
                 </div>
             </div>

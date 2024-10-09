@@ -1,4 +1,4 @@
-<h1 align="center">MERN SE Bootcamp - Capstone Project - Clothing Store App</h1> 
+<h1 align="center">Capstone Project: Clothing Store App</h1> 
 
 ### Project Overview 
 The Capstone Project aimis to develop a full-stack web application using the MERN stack (MongoDB, Express, React, and Node.js). The goal is to create a functional, interactive web application that demonstrates my skills in both frontend and backend development, focusing on user experience, creativity, and technical competence.
@@ -40,13 +40,13 @@ The objective of this capstone project is to apply the knowledge and skills acqu
 - POST /api/users/register: User registration.
 
 ## Challenges and Solutions
-**Challenge 1**: Handling Authentication
+**Challenge 1 - Handling Authentication:**
 **Solution** Implemented JWT-based authentication to secure routes and ensure user sessions are managed properly.
 
-**Challenge 2**: Error Handling
+**Challenge 2 -  Error Handling**
 **Solution** Used try/catch blocks and error handlers in both the frontend and backend to gracefully manage exceptions.
 
-**Challenge 3**: Asynchronous Data Fetching
+**Challenge 3 -  Asynchronous Data Fetching**
 **Solution** Implemented async/await with Axios to handle API requests more efficiently. 
 
 

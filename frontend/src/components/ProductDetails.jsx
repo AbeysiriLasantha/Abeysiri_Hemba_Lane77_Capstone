@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { CartContext } from "../features/ContextProvider";
 import { DataContext } from "../features/DataProvider"; // Import your DataContext
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ProductDetails = () => {
   const { itemCode } = useParams();
@@ -20,10 +21,10 @@ const ProductDetails = () => {
       <div className="row">
         {/* Left Column: Product Image */}
         <div className="col-md-6">
-          <img 
-            src={product.imageURL1} 
-            className="img-fluid" 
-            alt={product.itemName} 
+          <img
+            src={product.imageURL1}
+            className="img-fluid"
+            alt={product.itemName}
             style={{ maxWidth: "80%", height: "auto" }} // Adjust size here
           />
         </div>
@@ -56,9 +57,11 @@ const ProductDetails = () => {
             </div>
           </div>
 
-          {/* Action Buttons */}
-          <button className="btn btn-primary btn-lg w-100 mb-2">Buy Now</button>
-          
+          <Link to={`/buy-now/${product.itemPrice}`}>
+            <button className="btn btn-primary btn-lg w-100 mb-2">Buy Now</button>
+          </Link>
+
+
           <button
             className="btn btn-dark btn-lg w-100"
             onClick={() => dispatch({ type: "Add", product })}
