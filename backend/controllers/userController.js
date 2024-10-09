@@ -6,10 +6,17 @@ const createUser = async (req, res) => {
     const { email, password, firstName, lastName, country, address, city, state, zipCode, phone } = req.body;
 
     try {
+        // Check if the email already exists
+        const existingUser = await User.findOne({ email });
+        if (existingUser) {
+            return res.status(400).json({ message: 'This email already exists' });
+        }
+
         // Hash the password before saving
-        const saltRounds = 10;  // Number of salt rounds for hashing
+        const saltRounds = 10;
         const hashedPassword = await bcrypt.hash(password, saltRounds);
 
+        // Create a new user
         const newUser = new User({
             email,
             password: hashedPassword,  // Store the hashed password
@@ -25,6 +32,7 @@ const createUser = async (req, res) => {
 
         await newUser.save();
         res.status(201).json({ message: 'User created successfully', user: newUser });
+
     } catch (error) {
         res.status(500).json({ message: 'Error creating user', error });
     }

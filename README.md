@@ -9,8 +9,7 @@ The Capstone Project aimis to develop a full-stack web application using the MER
 - Features
 - API Endpoints
 - Challenges and Solutions
-- Future Enhancements
-- How to Run the Project?
+- Future Enhancements 
 
 
 ## Project Objective
@@ -60,15 +59,27 @@ The objective of this capstone project is to apply the knowledge and skills acqu
 ## External References
 1. YouTube Video Links
 [Build a Shopping Cart with React JS, Context API, and useReducer Hook | Ecommerce Website Tutorial](https://www.youtube.com/watch?v=uMBgUUPkgUY)
+
 [React Shopping Cart Tutorial | Context API with useReducer Hook in React JS](https://www.youtube.com/watch?v=HptuMAUaNGk)
+
 [React Context API with Project | useContext Hook | createContext | State Management Tutorial](https://www.youtube.com/watch?v=gQ_l-1zpVBo)
+
 [Learn useState In 15 Minutes - React Hooks Explained](https://www.youtube.com/watch?v=O6P86uwfdR0)
+
 [Learn React Hooks: useEffect - Simply Explained!](https://www.youtube.com/watch?v=-4XpG5_Lj_o)
+
 [Learn React Hooks: useReducer - Simply Explained!](https://www.youtube.com/watch?v=rgp_iCVS8ys)
+
 [Full React Tutorial #1 - Introduction](https://www.youtube.com/watch?v=j942wKiXFu8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d) 
 
 
 2. GitHub Repository Links 
 [React-Shopping-Cart](https://github.com/YousafKhan1/React-Shopping-Cart)
-[React-shopping-cart-context-with-reducer](https://github.com/piyush-eon/React-shopping-cart-context-with-reducer)[youtube-context-api-tutorial](https://github.com/piyush-eon/youtube-context-api-tutorial)[learn-react-hooks-useEffect](https://github.com/cosdensolutions/code/tree/master/videos/long/learn-react-hooks-useEffect)
+
+[React-shopping-cart-context-with-reducer](https://github.com/piyush-eon/React-shopping-cart-context-with-reducer)
+
+[youtube-context-api-tutorial](https://github.com/piyush-eon/youtube-context-api-tutorial)
+
+[learn-react-hooks-useEffect](https://github.com/cosdensolutions/code/tree/master/videos/long/learn-react-hooks-useEffect)
+
 [learn-react-hooks-useReducer](https://github.com/cosdensolutions/code/tree/master/videos/long/learn-react-hooks-useReducer)

@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import { useNavigate } from 'react-router-dom'; 
+import { useLocation } from 'react-router-dom';
 
 const User = () => {
+  const navigate = useNavigate(); 
+  const location = useLocation();
   const [formData, setFormData] = useState({
-    email: '',
+    email: location.state?.email || '',
     password: '',
     firstName: '',
     lastName: '',
@@ -15,6 +18,11 @@ const User = () => {
     zipCode: '',
     phone: ''
   });
+
+  
+const [message, setMessage] = useState('');
+const [isSuccess, setIsSuccess] = useState(false);
+
 
   const handleChange = (e) => {
     setFormData({
@@ -27,16 +35,22 @@ const User = () => {
     e.preventDefault();
     try {
       const res = await axios.post('http://localhost:5000/createuser', formData); 
-      // Reset form or redirect user as needed
+      setIsSuccess(true);
+      setMessage('User created successfully!');
     } catch (err) {
-      console.error('Error creating user:', err);
-      alert('Error creating user. Please try again.'); // Display error message
+      setIsSuccess(false);
+      setMessage(err.response?.data?.message || 'Error creating user. Please try again.');
     }
   };
 
   return (
     <div className="container mt-5">
       <h2>User Registration</h2>
+      {message && (
+        <div className={`alert ${isSuccess ? 'alert-success' : 'alert-danger'}`} role="alert">
+          {message}
+        </div>
+      )}
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="email" className="form-label">Email</label>
@@ -47,6 +61,7 @@ const User = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
+            readOnly
             required
           />
         </div>
@@ -168,8 +183,12 @@ const User = () => {
           />
         </div>
 
-        <button type="submit" className="btn btn-primary">Register</button>
+        <button type="submit" className="btn btn-primary">Register</button> 
+             
       </form>
+        {/* Back button placed outside the form */}
+        <button onClick={() => navigate('/')} className="btn btn-primary mt-3">Back</button> 
+
     </div>
   );
 };
