@@ -3,11 +3,11 @@ import React, { useContext } from 'react';
 import { CartContext } from '../features/ContextProvider';
 import { totalItem, totalPrice } from '../features/CartReducer';
 import CartProduct from '../components/CartProduct';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';    
 
 const Cart = () => {
   const { cart } = useContext(CartContext);
-  const navigate = useNavigate(); // Get the navigate function
+  const navigate = useNavigate();  
 
   const handleCheckout = () => {
     const price = totalPrice(cart); // Calculate total price
@@ -19,7 +19,7 @@ const Cart = () => {
       <div className="row">
         <div className="col-8">
           {cart.map((p) => (
-            <CartProduct key={p.id} product={p} /> // Add a key prop
+            <CartProduct key={p.id} product={p} />  
           ))}
         </div>
         <div className="col-4">

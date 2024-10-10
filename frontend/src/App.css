@@ -19,6 +19,8 @@
   justify-content: flex-start; /* Align items to the top */
   min-height: auto; /* Full height of the viewport */
   width: 100%;
+  background-color: rgb(117, 117, 107);
+  color: black;
 }
 
  

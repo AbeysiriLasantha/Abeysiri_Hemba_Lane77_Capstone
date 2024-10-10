@@ -36,7 +36,7 @@ const Products = (props) => {
 
   return (
     <div className="container mt-5" >
-      <div className="row"style={{border: "5px solid blue"}}>
+      <div className="row"style={{border: "2px solid gray"}}>
         {/* Sidebar Column */}
         <div className="col-md-3">
           <Sidebar />

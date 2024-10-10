@@ -37,13 +37,15 @@ function App() {
         <Header />
         </div>
 
-        <div className="nav-container" style={{ border: "10px solid blue" }} >
-          
-          {/* <NavbarNew/> */}
-          <CartWishList />
+        <div className="nav-container" >
+        {/* <div className="nav-container" style={{ border: "10px solid blue" }} > */}
+         
+            <CartWishList />
+                 
         </div>
 
-        <div className='appOuterDiv' style={{ border: "10px solid red" }}>
+        <div className='appOuterDiv' >
+        {/* <div className='appOuterDiv' style={{ border: "10px solid red" }}> */}
           <Routes>
             <Route path="/" element={<Home />} />
             {/* Routings for main menu */}

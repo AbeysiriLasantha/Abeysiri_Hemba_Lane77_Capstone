@@ -7,7 +7,7 @@ const Product = ({ product }) => {
   const { dispatch } = useContext(CartContext);
 
   return (
-    <div className="container-fluid" style={{ border: "10px solid orange" }}>
+    <div className="container-fluid" >
       <div className="row">
               {/* Product display on the right */}
         <div className="">

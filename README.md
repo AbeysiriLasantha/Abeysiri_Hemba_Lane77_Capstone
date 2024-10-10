@@ -4,24 +4,24 @@
 The Capstone Project aimis to develop a full-stack web application using the MERN stack (MongoDB, Express, React, and Node.js). The goal is to create a functional, interactive web application that demonstrates my skills in both frontend and backend development, focusing on user experience, creativity, and technical competence.
 
 ## Table of Contents
-- Project Objective
-- Technologies Used
-- Features
-- API Endpoints
-- Challenges and Solutions
-- Future Enhancements 
+-  Project Objective
+-  Technologies Used
+-  Features
+-  API Endpoints
+-  Challenges and Solutions
+-  Future Enhancements 
 
 
 ## Project Objective
 The objective of this capstone project is to apply the knowledge and skills acquired during the SE Bootcamp by building a full-stack MERN application. This project showcases my proficiency in developing both the frontend and backend components of a web application, adhering to best practices, and utilizing modern development tools.
 
 ## Technologies Used
-1. **MongoDB**: For database management and storing application data.
-2. **Express.js**: Backend framework used for building the RESTful API.
-3. **React.js**: Frontend framework for creating a dynamic user interface.
-4. **Node.js**: Runtime environment for server-side code.
-5. **Axios/Fetch API**: For data fetching from the server.
-6. **CSS**: Styling the frontend for a clean, user-friendly interface. 
+1.  **MongoDB**: For database management and storing application data.
+2.  **Express.js**: Backend framework used for building the RESTful API.
+3.  **React.js**: Frontend framework for creating a dynamic user interface.
+4.  **Node.js**: Runtime environment for server-side code.
+5.  **Axios/Fetch API**: For data fetching from the server.
+6.  **CSS**: Styling the frontend for a clean, user-friendly interface. 
 
 ## Features
 1. **User Authentication**: Users can register and log in, with protected routes based on authentication.
@@ -32,21 +32,21 @@ The objective of this capstone project is to apply the knowledge and skills acqu
 6. **State Management**: Uses React Hooks for state management.
 
 ## API Endpoints
-- GET /api/items: Fetch all items.
-- POST /api/items: Add a new item.
-- PUT /api/items/: Update an item by ID.
-- DELETE /api/items/: Delete an item by ID.
-- POST /api/users/login: User login.
-- POST /api/users/register: User registration.
+-  GET /api/items: Fetch all items.
+-  POST /api/items: Add a new item.
+-  PUT /api/items/: Update an item by ID.
+-  DELETE /api/items/: Delete an item by ID.
+-  POST /api/users/login: User login.
+-  POST /api/users/register: User registration.
 
 ## Challenges and Solutions
 **Challenge 1 - Handling Authentication:**
 **Solution** Implemented JWT-based authentication to secure routes and ensure user sessions are managed properly.
 
-**Challenge 2 -  Error Handling**
+**Challenge 2 -  Error Handling:**
 **Solution** Used try/catch blocks and error handlers in both the frontend and backend to gracefully manage exceptions.
 
-**Challenge 3 -  Asynchronous Data Fetching**
+**Challenge 3 -  Asynchronous Data Fetching:**
 **Solution** Implemented async/await with Axios to handle API requests more efficiently. 
 
 
@@ -57,21 +57,31 @@ The objective of this capstone project is to apply the knowledge and skills acqu
 - **Backend Menu**: Implement a menu in the backend to maintain the product items.
 
 ## External References
-**YouTube Video Links**
+**YouTube Video Links:**
 
 [Build a Shopping Cart with React JS, Context API, and useReducer Hook | Ecommerce Website Tutorial](https://www.youtube.com/watch?v=uMBgUUPkgUY)
+
 [React Shopping Cart Tutorial | Context API with useReducer Hook in React JS](https://www.youtube.com/watch?v=HptuMAUaNGk)
+
 [React Context API with Project | useContext Hook | createContext | State Management Tutorial](https://www.youtube.com/watch?v=gQ_l-1zpVBo)
+
 [Learn useState In 15 Minutes - React Hooks Explained](https://www.youtube.com/watch?v=O6P86uwfdR0)
+
 [Learn React Hooks: useEffect - Simply Explained!](https://www.youtube.com/watch?v=-4XpG5_Lj_o)
+
 [Learn React Hooks: useReducer - Simply Explained!](https://www.youtube.com/watch?v=rgp_iCVS8ys)
+
 [Full React Tutorial #1 - Introduction](https://www.youtube.com/watch?v=j942wKiXFu8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d) 
 
 
-**GitHub Repository Links**
+**GitHub Repository Links:**
 
 [React-Shopping-Cart](https://github.com/YousafKhan1/React-Shopping-Cart)
+
 [React-shopping-cart-context-with-reducer](https://github.com/piyush-eon/React-shopping-cart-context-with-reducer)
+
 [youtube-context-api-tutorial](https://github.com/piyush-eon/youtube-context-api-tutorial)
+
 [learn-react-hooks-useEffect](https://github.com/cosdensolutions/code/tree/master/videos/long/learn-react-hooks-useEffect)
+
 [learn-react-hooks-useReducer](https://github.com/cosdensolutions/code/tree/master/videos/long/learn-react-hooks-useReducer)

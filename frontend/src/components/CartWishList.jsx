@@ -77,8 +77,10 @@ const CartWishList = () => {
   };
 
   return (
-    <div className="d-flex justify-content-end align-items-center py-3 px-5 bg-secondary text-white">
-      {/* Sign-in section */}
+    <div className="cartLogin"  > 
+    {/* <div className="d-flex justify-content-end align-items-center py-3 px-5 bg-secondary text-white">  */}
+
+    {/* Sign-in section */}
       {!user ? (
         <form onSubmit={handleSearchUser} className="d-flex">
           <input
